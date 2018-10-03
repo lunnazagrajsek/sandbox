@@ -52,16 +52,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </head>
   
   <body>
-     <script>
-    dataLayer.push({
-    'event': 'event',
-		'eventCategory': 'android-dot-com',
-		'eventAction': 'phones:click',
-		'eventLabel': 'show-brand:samsung'
-
-    });
-      </script>
-    
     
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5MHRNK"
@@ -373,7 +363,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <a href="https://github.com/google/material-design-lite/blob/master/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
     <script src="../../material.min.js"></script>
-
+  <script>
+	    document.getElementById('more-button').onclick = function(){
+   		 dataLayer.push({
+    		'event': 'event',
+		'eventCategory': 'android-dot-com',
+		'eventAction': 'phones:click',
+		'eventLabel': 'show-brand:samsung'
+		 });
+	  }
+      </script>
 
   </body>
 </html>
